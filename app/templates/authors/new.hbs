@@ -1,0 +1,18 @@
+<!-- create-thing/template.hbs -->  
+<form class="form-horizontal">  
+  <div class="form-group">
+    <label for="Name" class="col-md-2 control-label">Name</label>
+    <div class="col-md-5">
+      {{input value=model.name type="text" class="form-control"}}
+    </div>
+    <label for="Name" class="col-md-2 control-label">Discount</label>
+    <div class="col-md-5">
+      {{input value=model.discount type="number" class="form-control"}}
+    </div>
+  </div>
+  <div class="form-group">
+   <div class="col-sm-offset-2 col-sm-10">
+     <button {{action "createAuthor"}} class="btn btn-sm btn-primary">Save</button>
+   </div>
+ </div>
+</form>  

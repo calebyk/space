@@ -1,0 +1,21 @@
+{{#if isActive}}
+<div role="tabpanel" class="tab-pane" id="descripcion">
+  <div class="row">
+
+    <div class="col-sm-12">
+      <h4></h4>
+      {{#if resourceObject.owner}}
+        <div>
+          Owner is: {{#link-to 'admin.contacts.edit' resourceObject.owner.id }}
+            {{ resourceObject.owner.first_names }}
+          {{/link-to}}
+        </div>
+      {{else}}
+       {{forms/select-owner resourceObject=resourceObject fieldKeys=fieldKeys}}
+      {{/if}}
+
+    </div>
+
+  </div>
+</div>
+{{/if}}

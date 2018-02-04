@@ -1,0 +1,125 @@
+<div class="container" id="seccion_ddd">
+    <div class="card">
+  <div class="card-header text-center">
+    <h2>New Property<small></small></h2>
+  </div>
+  <div class="card-body card-padding">
+    <div id="ember3423" class="ember-view"><div role="tabpanel" class="tab-pane active" id="general">
+  <div class="row">
+<!---->
+
+    <div class="col-sm-6">
+      <h4>General Data</h4>
+            <!---->    <div id="ember3424" class="ember-view form-group fg-float">  <a class="ayuda" data-toggle="tooltip" title="" data-original-title="Reference number for property"><i class="fa fa-info"></i></a>
+<div class="fg-line  ">
+  <label class="fg-label">Reference No</label>
+
+<!---->
+  <input id="ember3425" type="text" class="input-sm form-control fg-input ember-view ember-text-field">
+
+<!----></div>
+</div>
+<!----><!---->
+            <!----><!----><!---->    <div id="ember3426" class="ember-view form-group"><!---->
+  <label class="fg-label ">Type</label>
+<!---->
+<div class="fg-line has-">  
+  <select class="selectpicker" style="display: none;">
+  <option value=""><!----></option>
+  <option value="propertyTypes.apartamento">Apartment</option>
+  <option value="propertyTypes.bungalow">Bungalow</option>
+  <option value="propertyTypes.chaletIndependiente">Chalet</option>
+  <option value="propertyTypes.local">Commercial premises</option>
+  <option value="propertyTypes.casaRural">Country House</option>
+  <option value="propertyTypes.piso">Flat</option>
+  <option value="propertyTypes.garaje">Garage</option>
+  <option value="propertyTypes.hotel">Hotel</option>
+  <option value="propertyTypes.inversion">Investment</option>
+  <option value="propertyTypes.solar">Land</option>
+  <option value="propertyTypes.atico">Penthouse</option>
+  <option value="propertyTypes.edificioResidencial">Residential building</option>
+  <option value="propertyTypes.chaletAdosado">Semi-detached</option>
+  <option value="propertyTypes.estudio">Studio</option>
+  <option value="propertyTypes.villa">Villa</option>
+  <option value="propertyTypes.trastero">Warehouse</option>
+  </select><div class="btn-group bootstrap-select"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="&amp;lt;!----&amp;gt;"><span class="filter-option pull-left"><!----></span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li data-original-index="0" class="selected"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;><!----></span>"><span class="text"><!----></span><span class="fa fa-check check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Apartment</span>"><span class="text">Apartment</span><span class="fa fa-check check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Bungalow</span>"><span class="text">Bungalow</span><span class="fa fa-check check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Chalet</span>"><span class="text">Chalet</span><span class="fa fa-check check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Commercial premises</span>"><span class="text">Commercial premises</span><span class="fa fa-check check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Country House</span>"><span class="text">Country House</span><span class="fa fa-check check-mark"></span></a></li><li data-original-index="6"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Flat</span>"><span class="text">Flat</span><span class="fa fa-check check-mark"></span></a></li><li data-original-index="7"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Garage</span>"><span class="text">Garage</span><span class="fa fa-check check-mark"></span></a></li><li data-original-index="8"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Hotel</span>"><span class="text">Hotel</span><span class="fa fa-check check-mark"></span></a></li><li data-original-index="9"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Investment</span>"><span class="text">Investment</span><span class="fa fa-check check-mark"></span></a></li><li data-original-index="10"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Land</span>"><span class="text">Land</span><span class="fa fa-check check-mark"></span></a></li><li data-original-index="11"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Penthouse</span>"><span class="text">Penthouse</span><span class="fa fa-check check-mark"></span></a></li><li data-original-index="12"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Residential building</span>"><span class="text">Residential building</span><span class="fa fa-check check-mark"></span></a></li><li data-original-index="13"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Semi-detached</span>"><span class="text">Semi-detached</span><span class="fa fa-check check-mark"></span></a></li><li data-original-index="14"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Studio</span>"><span class="text">Studio</span><span class="fa fa-check check-mark"></span></a></li><li data-original-index="15"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Villa</span>"><span class="text">Villa</span><span class="fa fa-check check-mark"></span></a></li><li data-original-index="16"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Warehouse</span>"><span class="text">Warehouse</span><span class="fa fa-check check-mark"></span></a></li></ul></div></div>
+
+</div>
+</div>
+
+            <!----><!----><!---->    <div id="ember3444" class="ember-view form-group"><!---->
+  <label class="fg-label ">State</label>
+<!---->
+<div class="fg-line has-">  
+  <select class="selectpicker" style="display: none;">
+  <option value=""><!----></option>
+  <option value="propertyStates.aReformar">Needs refurbishing</option>
+  <option value="propertyStates.nuevo">New</option>
+  <option value="propertyStates.segundaMano">Second hand</option>
+  <option value="propertyStates.enConstruccion">Under construction</option>
+  </select><div class="btn-group bootstrap-select"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="&amp;lt;!----&amp;gt;"><span class="filter-option pull-left"><!----></span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner selectpicker" role="menu"><li data-original-index="0" class="selected"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;><!----></span>"><span class="text"><!----></span><span class="fa fa-check check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Needs refurbishing</span>"><span class="text">Needs refurbishing</span><span class="fa fa-check check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>New</span>"><span class="text">New</span><span class="fa fa-check check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Second hand</span>"><span class="text">Second hand</span><span class="fa fa-check check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Under construction</span>"><span class="text">Under construction</span><span class="fa fa-check check-mark"></span></a></li></ul></div></div>
+
+</div>
+</div>
+
+      <br>
+    </div>
+
+    <div class="col-sm-6">
+      <h4>Characteristics</h4>
+
+            <!---->    <div id="ember3450" class="ember-view form-group fg-float"><!----><div class="fg-line  ">
+  <label class="fg-label">Construction Year</label>
+
+<!---->
+  <input id="ember3451" type="number" class="input-sm form-control fg-input ember-view ember-text-field">
+
+<!----></div>
+</div>
+<!----><!---->
+            <!---->    <div id="ember3452" class="ember-view form-group fg-float"><!----><div class="fg-line  ">
+  <label class="fg-label">Bedrooms</label>
+
+<!---->
+  <input id="ember3453" type="number" class="input-sm form-control fg-input ember-view ember-text-field">
+
+<!----></div>
+</div>
+<!----><!---->
+            <!---->    <div id="ember3454" class="ember-view form-group fg-float"><!----><div class="fg-line  ">
+  <label class="fg-label">Bathrooms</label>
+
+<!---->
+  <input id="ember3455" type="number" class="input-sm form-control fg-input ember-view ember-text-field">
+
+<!----></div>
+</div>
+<!----><!---->
+            <!---->    <div id="ember3456" class="ember-view form-group fg-float"><!----><div class="fg-line  ">
+  <label class="fg-label">Plot Area</label>
+
+<!---->
+  <input id="ember3457" type="number" class="input-sm form-control fg-input ember-view ember-text-field">
+
+<!----></div>
+</div>
+<!----><!---->
+            <!---->    <div id="ember3458" class="ember-view form-group fg-float"><!----><div class="fg-line  ">
+  <label class="fg-label">Constructed Area</label>
+
+<!---->
+  <input id="ember3459" type="number" class="input-sm form-control fg-input ember-view ember-text-field">
+
+<!----></div>
+</div>
+<!----><!---->
+
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+
+  </div>
+{{outlet}}

@@ -1,0 +1,16 @@
+<div class="jumbo show-listing">
+  <h2 class="title">Author : {{model.name}}</h2>
+  <div class="right detail-section">
+    <div class="detail">
+      <strong>Author's books</strong> 
+    </div>
+    <div class="detail">
+      <ul class="results">
+	    {{#each model.books as |book|}}
+	      <li>{{book.title}}</li>
+	      <li>${{book.price}}</li>
+	    {{/each}}
+	  </ul>
+    </div>
+  </div>
+</div>

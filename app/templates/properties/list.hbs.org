@@ -1,0 +1,155 @@
+<div class="container" id="seccion_ddd">
+    <div id="ember844" class="ember-view"><div class="card">
+  <div class="card-header sep25">
+    <h2>Properties list</h2>
+    {{#link-to 'properties.new'}}
+		        New Property
+		{{/link-to}}
+    <div role="group" class="boton_anadir_propiedad">
+     </div>
+  </div>
+  <div class="card-body card-padding card-with-extra-header">
+    <div role="tabpanel">
+      <ul class="tab-nav" role="tablist" style="display:none;">
+        <li class="active">
+          <a id="ember847" href="/space/en/admin/properties/list/all" class="ember-view active"> Missing translation: all</a>
+        </li>
+        <li>
+          <a id="ember848" href="/space/en/admin/properties/list/visible" class="ember-view"> Visible</a>
+        </li>
+        <li>
+          <a id="ember849" href="/space/en/admin/properties/list/hidden" class="ember-view"> Hidden</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="visibles">
+          <div class="row">
+            <div class="col-sm-12">
+              <a download="prop2.csv" href="/export/properties">
+                <button type="submit" class="btn btn-edfile btn-sm m-t-10 waves-effect"> 
+                Download properties as a CSV file
+                </button>
+              </a>
+            </div>
+
+
+            <div class="col-sm-12" style="display:none;">
+                <div class="alert alert-warning alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><i class="fa fa-lg fa-exclamation"></i>These properties will not be shown on your website
+                </div>
+            </div>
+            <div class="col-sm-12">
+
+              <div id="ember858" class="ember-view"><div id="DataTables_Table_0_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer"><div class="row"><div class="col-sm-6"><div class="dataTables_length" id="DataTables_Table_0_length"><label>Show <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="form-control input-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-6"><div id="DataTables_Table_0_filter" class="dataTables_filter"><label>Search<input type="search" class="form-control input-sm" placeholder="" aria-controls="DataTables_Table_0"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="tabla_propiedades table table-striped table-vmiddle datatables dataTable no-footer" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+  <thead>
+    <tr role="row"><th style="visibility: hidden; width: 67px;" class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending"></th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Visible: activate to sort column ascending" style="width: 88px;">Visible</th><th data-type="text" data-order="desc" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Reference: activate to sort column ascending" style="width: 123px;">Reference</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Type: activate to sort column ascending" style="width: 69px;">Type</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Bedrooms: activate to sort column ascending" style="width: 127px;">Bedrooms</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Bathrooms: activate to sort column ascending" style="width: 135px;">Bathrooms</th></tr>
+  </thead>
+  <tbody>
+    
+    
+    
+    
+    
+    
+  <tr id="1" role="row" class="odd">
+      <td class="sorting_1">
+<a id="ember860" href="/space/en/admin/properties/1/edit" class="ember-view">          <i class="fa fa-pencil"></i>Edit
+        </a>&nbsp;
+
+        <div style="display:none;">
+          <a href="" data-ember-action="877"><i class="fa fa-eye"></i>Show</a>  
+        </div>
+
+      </td>
+      <td>true</td>
+      <td>re-s1</td>
+      <td><!----></td>
+      <td>2</td>
+      <td>2</td>
+    </tr><tr id="2" role="row" class="even">
+      <td class="sorting_1">
+<a id="ember879" href="/space/en/admin/properties/2/edit" class="ember-view">          <i class="fa fa-pencil"></i>Edit
+        </a>&nbsp;
+
+        <div style="display:none;">
+          <a href="" data-ember-action="880"><i class="fa fa-eye"></i>Show</a>  
+        </div>
+
+      </td>
+      <td>true</td>
+      <td>pwb-r1</td>
+      <td><!----></td>
+      <td>2</td>
+      <td>2</td>
+    </tr><tr id="3" role="row" class="odd">
+      <td class="sorting_1">
+<a id="ember882" href="/space/en/admin/properties/3/edit" class="ember-view">          <i class="fa fa-pencil"></i>Edit
+        </a>&nbsp;
+
+        <div style="display:none;">
+          <a href="" data-ember-action="883"><i class="fa fa-eye"></i>Show</a>  
+        </div>
+
+      </td>
+      <td>true</td>
+      <td>re-s2</td>
+      <td><!----></td>
+      <td>1</td>
+      <td>1</td>
+    </tr><tr id="4" role="row" class="even">
+      <td class="sorting_1">
+<a id="ember885" href="/space/en/admin/properties/4/edit" class="ember-view">          <i class="fa fa-pencil"></i>Edit
+        </a>&nbsp;
+
+        <div style="display:none;">
+          <a href="" data-ember-action="886"><i class="fa fa-eye"></i>Show</a>  
+        </div>
+
+      </td>
+      <td>true</td>
+      <td>re-r2</td>
+      <td><!----></td>
+      <td>1</td>
+      <td>1</td>
+    </tr><tr id="5" role="row" class="odd">
+      <td class="sorting_1">
+<a id="ember888" href="/space/en/admin/properties/5/edit" class="ember-view">          <i class="fa fa-pencil"></i>Edit
+        </a>&nbsp;
+
+        <div style="display:none;">
+          <a href="" data-ember-action="889"><i class="fa fa-eye"></i>Show</a>  
+        </div>
+
+      </td>
+      <td>true</td>
+      <td>re-s3</td>
+      <td><!----></td>
+      <td>1</td>
+      <td>1</td>
+    </tr><tr id="6" role="row" class="even">
+      <td class="sorting_1">
+<a id="ember891" href="/space/en/admin/properties/6/edit" class="ember-view">          <i class="fa fa-pencil"></i>Edit
+        </a>&nbsp;
+
+        <div style="display:none;">
+          <a href="" data-ember-action="892"><i class="fa fa-eye"></i>Show</a>  
+        </div>
+
+      </td>
+      <td>true</td>
+      <td>re-r3</td>
+      <td><!----></td>
+      <td>1</td>
+      <td>1</td>
+    </tr></tbody>
+</table></div></div><div class="row"><div class="col-sm-5"><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing items from 1 al 6 from a total of 6 properties</div></div><div class="col-sm-7"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="DataTables_Table_0_previous"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0">&lt;</a></li><li class="paginate_button active"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0">1</a></li><li class="paginate_button next disabled" id="DataTables_Table_0_next"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0">&gt;</a></li></ul></div></div></div></div>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+{{outlet}}

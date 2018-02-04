@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="card-header text-center">
+    <h2>{{t "newProperty" }}<small></small></h2>
+  </div>
+
+  {{!--<form {{action "create" on="submit"}}>
+        <button type="submit"  style="" class="btn btn-primary waves-effect" {{action "create"}}>
+          {{t "create"}}
+        </button> 
+    --}}
+        
+  <div class="card-body card-padding">
+    {{tabs-property/new-property resourceObject=model fieldKeys=fieldKeys }}
+  </div>
+  <!--/form-->
+
+</div>
+

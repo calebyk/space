@@ -1,0 +1,50 @@
+{{!-- https://github.com/yapplabs/ember-radio-button --}}
+{{!-- {{#if fieldDetails.tooltipTextTKey}}
+  <a class="ayuda" data-toggle="tooltip" title="" data-original-title={{t fieldDetails.tooltipTextTKey}}><i class="fa fa-info"></i></a>
+{{/if}}
+
+{{#if fieldDetails.labelTextTKey}}
+  <label class="fg-label ">{{t fieldDetails.labelTextTKey }}</label>
+{{/if}}
+ --}}
+{{#if shouldShowHeader}}
+  <label class="fg-label ">{{t fieldDetails.headerTextTKey }}</label>
+{{/if}}
+{{#if alertInfo }}
+  <div class="alert alert-info alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Cerrar"><span aria-hidden="true"></span></button><i class="fa fa-lg fa-info"></i> {{t alertInfo }}  
+  </div>
+{{/if}}
+
+<div class="fg-line has-">
+{{#each fieldOptions as |selectValue|}} 
+  <div class="radio m-b-15" >
+    <label>
+    {{radio-button
+    radioClass="input-helper"
+    value=selectValue.value
+    groupValue=displayValue
+    changed="radioChanged"}}
+      <i class="input-helper"></i> 
+      {{#if selectValue.labelTextTKey}}
+        {{t selectValue.labelTextTKey }}
+      {{else}}
+        {{ selectValue.labelText }}
+      {{/if}}
+    </label>
+  </div>
+{{/each}}
+
+{{!-- {{#each fieldOptionObjects as |selectValue|}} 
+  <div class="radio m-b-15" >
+    <label  >
+      <input {{action "radioChanged" selectValue this}} type="radio"  id={{ selectValue.value }}
+       value={{ selectValue.value }} checked={{ selectValue.checked}}>
+      <i class="input-helper"></i> {{ selectValue.label }}
+    </label>
+  </div>
+{{/each}}
+ --}}
+
+
+</div>

@@ -1,0 +1,20 @@
+{{#each model as |rental|}}
+                  <article class="listing">
+                    <h3>{{rental.visible}}</h3>
+                    <div class="detail owner">
+                      <span>Owner:</span> {{rental.reference}}
+                    </div>
+                    <div class="detail type">
+                      <span>Type:</span> {{rental.count_bedrooms}}
+                    </div>
+                    <div class="detail location">
+                      <span>Location:</span> {{rental.count_bathrooms}}
+                    </div>
+                    <div class="detail bedrooms">
+                      <span>Number of bedrooms:</span> {{!-- --}}
+                    </div>
+                  </article>
+                {{/each}}
+
+
+{{!--tabs-property/list-properties propertiesStatus=filter properties=lite-properties--}}

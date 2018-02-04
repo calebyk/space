@@ -1,0 +1,29 @@
+<div class="m-t-20">
+{{#if errors}} {{#each errors as |error|}}
+<div class="fg-float has-error">
+  <div class="help-block has-error">{{t error }}</div>
+</div>
+{{/each}} 
+{{/if}}
+  {{#each siteSections as |sectionDetails|}}
+  <div class="fg-line m-b-5 m-t-0">
+    <div class="checkbox m-b-5">
+      <label>
+        <input type="checkbox" checked={{sectionDetails.visible}}
+        onClick={{action "changeNavbarItem" sectionDetails }}>
+        <i class="input-helper"></i>          
+        <strong>
+          {{ sectionDetails.link_title }}
+        </strong>
+      </label>
+    </div>
+  </div>
+  {{/each}} 
+<div class="row" style="display:none;">
+  <div class="col-md-6">
+    {{forms/nav-link-new supportedLanguages=supportedLanguages locales=locales i18nKeyPrefix=adminTranslations.i18nKeyPrefix batchKey=adminTranslations.batchKey updateTranslationsArrayAction="updateTranslationsArray" }}    
+  </div>
+</div>
+
+
+</div>

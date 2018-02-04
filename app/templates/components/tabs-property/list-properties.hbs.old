@@ -1,0 +1,67 @@
+<div class="card">
+  <div class="card-header sep25">
+    <h2>Properties List</h2>
+
+        <div role="group" class="boton_anadir_propiedad">
+          {{#link-to "properties" data-toggle="tooltip" 
+          title="settingsForProperties" class="btn_settings btn btn-circulo btn-float waves-effect pull-right" }} 
+           <i class="fa fa-gears"></i>
+          {{/link-to}}  
+
+          {{#link-to "properties.new" data-toggle="tooltip" 
+          title= "addProperty" class="btn_editar_propiedad btn bgm-cyan btn-circulo btn-float waves-effect" }} 
+           <i class="md md-add"></i>
+          {{/link-to}}  
+
+{{!--             <a href="editar_propiedad" data-toggle="tooltip" title="Añadir propiedad" class="btn bgm-cyan btn-circulo btn-float waves-effect">
+            <i class="fa fa-plus"></i><i class="md md-add"></i></a> --}}
+        </div>
+
+  </div>
+  <div class="card-body card-padding card-with-extra-header">
+    <div role="tabpanel" >
+      <ul class="tab-nav" role="tablist" style="display:none;">
+        <li class={{if (eq propertiesStatus "all") "active"}}>
+          {{#link-to 'properties.list.filter' 'all' aria-controls="visibles" role="tab" }} all {{/link-to}}
+        </li>
+        <li class={{if (eq propertiesStatus "visible") "active"}}>
+          {{#link-to 'properties.list.filter' 'visible' aria-controls="visibles" role="tab" }} visible {{/link-to}}
+        </li>
+        <li class={{if (eq propertiesStatus "hidden") "active"}}>
+          {{#link-to 'properties.list.filter' 'hidden' aria-controls="visibles" role="tab" }} hidden {{/link-to}}
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="visibles">
+          <div class="row">
+            <div class="col-sm-12">
+              <a href="{{ exportUrl }}" download="prop2.csv">
+                <button type="submit" class="btn btn-edfile btn-sm m-t-10 waves-effect"> 
+                Download properties as a CSV file
+                </button>
+              </a>
+            </div>
+
+
+            <div class="col-sm-12" style="display:none;">
+              {{#if (eq propertiesStatus "visible")}}
+                <div class="alert alert-success alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="close" {{!-- t "close" --}}><span aria-hidden="true">×</span></button><i class="fa fa-lg fa-check"></i> visible {{!--t "alerts.visibleProperties"--}}
+                </div>
+                {{else}}
+                <div class="alert alert-warning alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="close" {{!-- t "close" --}}><span aria-hidden="true">×</span></button><i class="fa fa-lg fa-exclamation"></i> hidden {{!--t "alerts.hiddenProperties"--}}
+                </div>
+              {{/if}}
+            </div>
+            <div class="col-sm-12">
+              {{tabs-property/data-table-properties properties=properties propertiesStatus=propertiesStatus
+              hidePropertyAction="hideProperty" }}
+            </div>
+          </div>
+          {{!-- above is col-sm-12 end --}}
+        </div>
+      </div>
+      {{!-- above is tab-content end --}}
+    </div>
+  </div>
+  {{!-- above is card-body end --}}
+</div>

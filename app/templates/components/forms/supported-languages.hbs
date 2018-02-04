@@ -1,0 +1,38 @@
+{{#if errors}} {{#each errors as |error|}}
+<div class="fg-float has-error">
+  <div class="help-block has-error">{{t error }}</div>
+</div>
+{{/each}} 
+{{/if}}
+<div>
+  {{#each localesArrayWithValues as |fieldDetails|}}
+  <div class="fg-line m-b-15">
+    <div class="checkbox m-b-15">
+      <label>
+        <input type="checkbox" checked={{fieldDetails.value}}
+        onClick={{action "changeSupportedLocale" fieldDetails }}>
+        <i class="input-helper"></i>
+        <strong>
+          {{t fieldDetails.labelTextTKey }}
+        </strong>
+      </label>
+    {{#if fieldDetails.isNotComplete}}
+      <div>(Note: Support for this language is not yet complete)</div>
+    {{/if}}
+    </div>
+    {{#if fieldDetails.value}}
+    <div class="m-l-15">
+    <div class="m-b-5">Variant:</div>
+    {{#each fieldDetails.localeVariants as |localeVariant| }}
+    <label class="radio radio-inline m-r-20">
+      {{radio-button radioClass="input-helper" value=localeVariant groupValue=fieldDetails.currentLocaleVariant
+      changed="changeSupportedLocale" }}
+      <i class="input-helper"></i> {{t localeVariant }}
+    </label>
+    {{/each}}
+    </div>
+    {{/if}}
+    <br>
+  </div>
+  {{/each}} 
+</div>

@@ -1,0 +1,36 @@
+<div role="tabpanel" class="tab-pane active" id="general">
+  <div class="row">
+{{#if hasChanged}}
+  {{#if hasErrors}}
+     <div class="pull-left">{{t "prompts.fixErrors" }}</div>
+    {{else}}
+    <div class="col-sm-12">
+      <div class="alert alert-info " role="alert">
+        <button type="submit"  style="" class="btn btn-primary waves-effect" {{action "createPropertyResource"}}>
+          {{t "create"}}
+        </button>
+        <button type="submit"  style="display:none;" class="btn btn-default waves-effect" 
+        {{action "cancelChanges" }}>
+          {{t "cancel"}}
+        </button> 
+      </div>
+    </div>
+  {{/if}}
+{{/if}}
+
+
+    <div class="col-sm-6">
+      <h4>{{t "propertyGeneralSections.generalData"}}</h4>
+        {{#each inputFields as |inputField|}} 
+            {{partial "partials/input-field-resolver" }}
+        {{/each}}
+      
+    </div>
+    <div class="col-sm-6">
+      <h4>{{t "propertyGeneralSections.characteristics" }}</h4>
+        {{#each characteristicasInputFields as |inputField|}} 
+            {{partial "partials/input-field-resolver" }}
+        {{/each}}
+    </div>
+  </div>
+</div>

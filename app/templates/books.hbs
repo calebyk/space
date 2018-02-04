@@ -1,0 +1,11 @@
+is Admin? {{input type="checkbox" name="isAdmin" checked=isAdmin}}
+{{#link-to "authors" data-toggle="dropdown"}}authors{{/link-to}}
+{{input type="text" data-toggle="tooltip" data-placement="bottom" title="Name"}}
+
+<ul class="results">
+    {{#each model as |book|}}
+      <li>{{book.title}}, {{book.price}}, {{book.author}}</li>
+    {{/each}}
+</ul>
+
+{{outlet}}

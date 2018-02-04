@@ -1,0 +1,51 @@
+<div class="card">
+  <div class="card-header" style="padding:0px;">
+    
+    <div class="row">
+      <div class="col-sm-2">
+      <div class="thumbnailxxx" style="" >
+        <img src="{{ model.primaryPhotoUrl }}" alt="" style="height: 90px;max-width: 140px;">
+      </div>    
+      </div>
+
+      <div class="col-sm-10" style="">
+        <div class="m-t-25 m-l-25">
+          <h2>
+            {{!-- {{t "editarPropiedad" }} --}}
+            <span>REF: {{model.reference}} </span>
+            <p class="iconos_grande m-t-10 m-b-5">
+              <i class="fa fa-bed"></i> <span>{{model.countBedrooms}}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fa fa-shower"></i> 
+              <span>{{model.countBathrooms}}<span>&nbsp;&nbsp;&nbsp;
+              <i class="fa fa-arrows"></i> 
+              <span>{{model.constructedArea}}
+              {{#if (eq model.areaUnit "sqft")}}
+                sqft
+              {{/if}}
+              {{#if (eq model.areaUnit "sqmt")}}
+                m<sup>2</sup>
+              {{/if}}
+              </span>
+              </span>
+              </span>
+            </p>
+          </h2>
+        </div>
+
+          <div role="group" class="botones_web" style="display:none;">
+            {{#link-to "properties" data-toggle="tooltip" 
+                title=(t "returnToProperties") class="btn_settings btn btn-circulo btn-float waves-effect pull-right" }} 
+              <i class="fa fa-arrow-left"></i>
+            {{/link-to}}  
+          </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+  <div class="card-body card-padding">
+  {{outlet}}
+  </div>
+</div>

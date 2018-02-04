@@ -1,0 +1,49 @@
+<table  class="tabla_propiedades table table-striped table-vmiddle datatables">
+  <thead>
+    <tr>
+      <th style="visibility: hidden;" >actions{{!--t "propertyColHeader.actions" --}}</th>
+      <th >visible{{!--t "propertyColHeader.visible"--}}</th>
+
+      <th  data-type="text" data-order="desc">Reference</th>
+{{!--       <th >highlighted{{t "propertyColHeader.highlighted"}}</th>
+ --}}      
+{{!--       <th >{{t "propertyColHeader.locality"}}</th>
+      <th >{{t "propertyColHeader.zone"}}</th>
+ --}}      
+      <th >type{{!--t "propertyColHeader.type"--}}</th>
+      {{!-- <th >{{t "propertyColHeader.price"}}</th> --}}
+      <th >bedrooms{{!--t "propertyColHeader.bedrooms"--}}</th>
+      <th >bathrooms{{!--t "propertyColHeader.bathrooms"--}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each properties as |property|}}
+    <tr id={{property.id }}>
+      <td>
+        {{!--#link-to 'admin.propiedades.editar' property.id--}}
+          <i class="fa fa-pencil"></i>edit
+        {{!--/link-to--}}&nbsp;
+
+        <div style="display:none;">
+        {{#if showingVisibleProperties}}
+            <a href="" {{action "hideProperty" property }} ><i class="fa fa-eye-slash"></i>hide</a>
+        {{else}}
+          <a href="" {{action "unHideProperty" property }} ><i class="fa fa-eye"></i>show</a>  
+        {{/if}}
+        </div>
+
+      </td>
+      <td>{{ property.visible }}</td>
+      <td>{{ property.reference }}</td>
+      {{!-- <td>{{t property.highlighted }}</td> --}}
+{{!--       <td>{{ property.localityTitle }}</td>
+      <td>{{ property.zoneTitle }}</td>
+ --}}      
+      <td>{{ property.proptypekey }}</td>
+      {{!-- <td>{{ property.contextualPriceCents }}</td> --}}
+      <td>{{ property.countbedrooms }}</td>
+      <td>{{ property.countbathrooms }}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

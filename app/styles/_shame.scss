@@ -1,0 +1,202 @@
+.smaller-font {
+  font-size: smaller;
+}
+
+.error-notice {
+  color: red;
+}
+
+.alert-info {
+  /*blue info banners for sections*/
+  padding: 6px 6px;
+  margin-bottom: 0px;
+}
+
+.dataTables_length,
+.dataTables_filter {
+  /* hide search and length display on property list*/
+  display: none;
+}
+
+
+/*
+
+attempt to fix + and - indicators on sub-menu
+- not successfull...
+
+#sidebar .main-menu > li.sub-menu > a:before {
+  content: "\f0fb";
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+#sidebar .main-menu > li.sub-menu > a:after {
+  content: "\f111";
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+
+
+
+#sidebar .main-menu > li.sub-menu.sm-toggled > a:before {
+  content: "\f0fb";
+  -webkit-transform: scale(0) rotate(-90deg);
+  -ms-transform: scale(0) rotate(-90deg);
+  -o-transform: scale(0) rotate(-90deg);
+  transform: scale(0) rotate(-90deg);
+}
+#sidebar .main-menu > li.sub-menu.sm-toggled > a:after {
+  content: "\f111";
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+*/
+
+.content-item-container {
+  /*style up summernote editable items when
+  not being edited*/
+  border-width: 1px;
+  border-style: outset;
+  padding: 5px;
+  margin: 12px 0px;
+  border-radius: 6px;
+  min-height: 50px;
+}
+
+.ed-ca-head {
+  /*input for editing content area cols header*/
+  font-size: 18px;
+  padding: 10px;
+  color: black;
+  border-width: 1px;
+  border-style: solid;
+  /* padding: 5px; */
+  margin: 12px 0px;
+}
+
+.note-editor {
+  /*by default there is 18px bottom margin*/
+  /*margin-bottom: 0px;*/
+}
+
+.note-toolbar,
+.note-editor .panel-heading {
+  /*better look for summernote toolbar and also less waste of space when 
+  toolbar not displayed*/
+  /*  border-bottom-width: 0px;
+  padding: 0px;
+*/
+}
+
+.note-editor .note-toolbar,
+.note-popover .note-toolbar
+/*.note-editor .popover-content,
+.note-popover .popover-content
+*/
+
+{
+  padding: 0px;
+}
+
+.note-editor .note-editing-area .note-editable {
+  /* setting min height on summernote does not work so have to 
+  do it here */
+  /*min-height: 120px;*/
+}
+
+.btn-edfile {
+  .padded-pencil {
+    /*below needed to center editing pencil icon in firefox*/
+    padding: 6px;
+  }
+}
+
+.card-with-extra-header {
+  /*
+  below was previously applied to div.card-body here
+  /Users/etewiah/Ed/sites-2015-spt/inmo1-client/vendor/cesar-2.css
+  - had to override cos of issue with dropdown for sitelayout
+  - needed here to show links to diff property lists
+  */
+  overflow: hidden;
+}
+
+.bad,
+.error-info {
+  color: red;
+  padding: 15px 0px;
+}
+
+
+/*http://www.abeautifulsite.net/whipping-file-inputs-into-shape-with-bootstrap-3/*/
+
+.btn-edfile {
+  position: relative;
+  overflow: hidden;
+  /*bootstrappy blue*/
+  background: #4a90e2;
+  color: white;
+}
+
+.btn-edfile input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+
+
+/* for language indicator */
+
+.in-lang {
+  font-size: 12px;
+}
+
+.group-of-languages-input {
+  /*TODO - set border 4 group of languages..*/
+}
+
+
+/*for spectrum color picker */
+
+.sp-preview {
+  width: 300px;
+}
+
+
+/*for sorting of photos: */
+
+#sortable {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 450px;
+}
+
+#sortable div {
+  margin: 3px 3px 3px 0;
+  padding: 1px;
+  float: left;
+  width: 100px;
+  height: 90px;
+  font-size: 4em;
+  text-align: center;
+}
+
+#sortable div:hover {
+  cursor: grab;
+}

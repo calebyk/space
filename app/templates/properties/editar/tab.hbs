@@ -1,0 +1,33 @@
+<div role="tabpanel">
+  <ul data-tab-color="green" class="tab-nav" role="tablist" tabindex="1" style="overflow: hidden; outline: none;">
+{{!--     <li class="active"><a href="#general" aria-controls="general" role="tab" data-toggle="tab">General</a></li>
+ --}}
+
+    {{#each tabsList as |tab|}}
+        <li class={{if (eq tab.tabValue activeTabName) "active"}} >{{#link-to 'properties.editar.tab' tab.tabValue}}{{t tab.tabTitleKey}}{{/link-to}}</li>  
+    {{/each}}
+
+  </ul>
+  <div class="tab-content">
+{{!-- referring to property as resourceObject is usefull as it allows me to use generic ref in base/tab-with-form --}}
+    {{!-- {{tabs-property/general-tab activeTabName=activeTabName changedFields=changedFields resourceObject=property fieldKeys=fieldKeys }} --}}
+
+{{!--     {{tabs-property/description-tab activeTabName=activeTabName changedFields=changedFields resourceObject=property supportedLanguages=supportedLanguages }} --}}
+
+{{!--     {{tabs-shared/location-tab activeTabName=activeTabName changedFields=changedFields resourceObject=property fieldKeys=fieldKeys }}
+ --}}
+    {{tabs-property/extras-tab activeTabName=activeTabName changedFields=changedFields propertyResource=property  fieldKeys=fieldKeys }}
+
+    {{tabs-property/venta-tab activeTabName=activeTabName changedFields=changedFields resourceObject=property }}
+
+    {{tabs-property/owner-tab activeTabName=activeTabName changedFields=changedFields resourceObject=property fieldKeys=fieldKeys}}
+
+    {{!--TODO - use dynamic component for more of above --}}
+    {{component tabs-property-component activeTabName=activeTabName changedFields=changedFields resourceObject=property fieldKeys=fieldKeys supportedLanguages=supportedLanguages  clientSetup=clientSetup}}
+    {{!-- clientSetup above used to feed in currency options from server --}}
+
+  </div>
+
+</div>
+
+

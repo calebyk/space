@@ -1,0 +1,7 @@
+<ul class="results">
+    {{#each model as |author|}}
+    {{#link-to "authors.show" author}}
+      <li>{{author.id}}. {{author.name}}</li>
+    {{/link-to}}  
+    {{/each}}
+</ul>
