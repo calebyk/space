@@ -1,0 +1,19 @@
+<div class="jumbo show-listing">
+  <h2 class="title">Author : {{input value = model.name}}</h2>
+  
+  <div class="right detail-section">
+    <div class="detail">
+      <strong>Author's books</strong> 
+    </div>
+    <div class="detail">
+      <ul class="results">
+	    {{#each model.books as |book|}}
+	      <li>{{input value = book.title}}</li>
+	      <li>${{input value = book.price}}</li>
+	    {{/each}}
+	  </ul>
+    </div>
+  </div>
+</div>
+
+<button {{action "savePost"}}>Save</button>

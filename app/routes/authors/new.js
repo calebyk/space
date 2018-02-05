@@ -3,15 +3,22 @@ import Route from '@ember/routing/route';
 export default Route.extend({
 
 	model() {
-    return this.get('store').createRecord('author',{});
+    return this.get('store').createRecord('author');
   },
+
+  
+  //setupController(controller, model) {
+    //controller.set("model", this.store.createRecord("author"));
+   // controller.set("fieldKeys", model);
+  //},
 
   actions: {
     createAuthor() {
-       this.get('currentModel').save().then( author =>
-           this.transitionToRoute('authors',author.get('id')));
-              debugger;
-
+      //console.log(this.get('currentModel'));
+      //console.log(this.get('controller.model'));
+       this.get('controller.model').save().then( author =>
+           this.transitionTo('authors.edit',author.get('id'))
+           );
         },
     cancel() {
       this.transitionTo('authors');
@@ -19,6 +26,7 @@ export default Route.extend({
   }
 
 });
+
       /* 
       let book = this.modelFor(this.new);
       var self = this;

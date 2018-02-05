@@ -1,6 +1,6 @@
 <ul class="results">
     {{#each model as |author|}}
-    {{#link-to "authors.show" author}}
+    {{#link-to "authors.edit" author}}
       <li>{{author.id}}. {{author.name}}</li>
     {{/link-to}}  
     {{/each}}

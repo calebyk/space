@@ -1,0 +1,7 @@
+
+<ul class="results">
+    {{#each model as |book|}}
+      <li>{{#link-to "books.edit" book}} {{book.title}} {{/link-to}}, {{book.price}}, {{#link-to "authors.edit" book.author.id}} {{book.author.name}}{{/link-to}}</li>
+    {{/each}}
+</ul>
+{{outlet}}
